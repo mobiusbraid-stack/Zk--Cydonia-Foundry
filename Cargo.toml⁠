@@ -1,0 +1,17 @@
+[package]
+name = "cydonia-zk-tpm"
+version = "1.0.0"
+edition = "2021"
+authors = ["Cydonia Foundry <architect@cydonia.io>"]
+description = "ZK-SNARK + TPM 2.0 Hardware Attestation SDK for Edge & Confidential Computing"
+
+[dependencies]
+ark-ff = "0.4"
+ark-ec = "0.4"
+ark-groth16 = "0.4"
+ark-bn254 = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.0", features = ["full"] }
+// Copyright (c) 2026 Cydonia Foundry. All rights reserved.
+// Licensed under the Business Source License 1.1 (BSL-1.1).
+// See LICENSE file in the project root for commercial licensing terms.
