@@ -1,0 +1,10 @@
+cydonia-zk-tpm-sdk/
+├── Cargo.toml                  # Package manifest & dependencies (arkworks / tpm2-tss)
+├── README.md                   # Enterprise integration guide & quickstart
+├── src/
+│   ├── lib.rs                  # Primary SDK entrypoint
+│   ├── prover.rs               # Groth16 π = (A, B, C) ZK-SNARK circuit generator
+│   ├── tpm.rs                  # TPM 2.0 hardware Root-of-Trust key binding driver
+│   └── anomaly.rs            # Multi-modal anomaly detector (Clock drift & gradient limits)
+└── examples/
+    └── edge_node_attest.rs     # 10ms execution & verification demo script
